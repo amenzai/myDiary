@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>首页</title>
+  <meta name="renderer" content="webkit">
+  <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript">
+    document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px';
+  </script>
+</head>
+
+<body>
+  <article class="page-con">
+    <section class="section-one"> <img src="images/luodiye_01.jpg" alt=""> </section>
+    <section class="section-two"> <img src="images/top.jpg" alt=""> </section>
+    <hr class="hr">
+    <section class="section-three">
+      <h2>关键词抢占各大搜索引擎首页排名</h2>
+      <p>目前已有<i class="red">1180</i>人领取福利</p>
+      <p>免费网站分析诊断一次（价值188元）</p>
+      <form action="/" class="promote-form">
+        <div class="input-item">
+          <label for="company-name" class="label">公司名称：</label>
+          <input type="text" class="input" id="company-name" name="company-name"> </div>
+        <div class="input-item">
+          <label for="name" class="label">姓名：</label>
+          <input type="text" class="input" id="name" name="name"> </div>
+        <div class="input-item">
+          <label for="mobile" class="label">手机号：</label>
+          <input type="text" class="input" id="mobile" name="mobile"> </div>
+        <button type="button" class="btn">资讯推广</button>
+      </form>
+    </section>
+    <section class="section-four"> <img src="images/four.png" alt="">
+      <form action="" class="search-form clearfix">
+        <input type="text" class="input" name="keyword" id="keyword" placeholder="请输入关键词进行查价...">
+        <button class="btn" type="button">查询</button>
+      </form>
+      <p class="meta">目前已有<i class="red">245431</i>次查询</p>
+    </section>
+    <section> <img src="images/luodiye_04.jpg" alt=""> </section>
+    <section> <img src="images/luodiye_05.jpg" alt=""> </section>
+    <section> <img src="images/luodiye_06.jpg" alt=""> </section>
+    <section> <img src="images/luodiye_07.jpg" alt=""> </section>
+    <section> <img src="images/luodiye_08.jpg" alt=""> </section>
+    <section> <img src="images/luodiye_09.jpg" alt=""> </section>
+    <section class="section-three">
+      <p class="info">云客网运用12年SEO技术，帮助网站关键词快速在搜索引擎中，获得更靠前、稳定、 持久的自然排名；为官网引入源源不断的搜索流量，</p>
+      <form action="/" class="promote-form">
+        <div class="input-item">
+          <label for="company-name" class="label">公司名称：</label>
+          <input type="text" class="input" id="company-name" name="company-name"> </div>
+        <div class="input-item">
+          <label for="name" class="label">姓名：</label>
+          <input type="text" class="input" id="name" name="name"> </div>
+        <div class="input-item">
+          <label for="mobile" class="label">手机号：</label>
+          <input type="text" class="input" id="mobile" name="mobile"> </div>
+        <button type="button" class="btn" id="go-chat">资讯推广</button>
+      </form>
+    </section>
+    <section> <img src="images/luodiye_11.jpg" alt=""> </section>
+    <section> <img src="images/five.jpg" alt=""> </section>
+    <section class="section-five"> 
+      <a href="https://m.yuntask.com/register"><i class="icon-tel"></i>立即咨询</a>
+    </section>
+    <div class="ce_nav"> 
+      <img src="images/kf_zk.png"> 
+      <a href="javascript:void(0);" class="ce_click"></a> 
+      <a href="mqqwpa://im/chat?chat_type=wpa&amp;uin=2851282645&amp;version=1&amp;src_type=web&amp;web_src=lvlingseeds.com" class="ce_kf"></a> 
+      <a href="mqqwpa://im/chat?chat_type=wpa&amp;uin=285128255&amp;version=1&amp;src_type=web&amp;web_src=lvlingseeds.com" class="ce_qd"></a> 
+    </div>
+    <div class="msg">注册陈宫<br>去登陆</div>
+  </article>
+  
+</body>
+<script src="vendor/jquery.min.js"></script>
+<script>
+  ;(function($) {
+    $('.ce_click').click(function(event) {
+      /* Act on the event */
+      var $ce_nav = $('.ce_nav')
+      if ($ce_nav.css('right') === '0px') {
+        $ce_nav.animate({right: '-83px'}, 500)
+      } else {
+        $ce_nav.animate({right: '0px'}, 500)
+      }
+    });
+    $('#go-chat').click(function(event) {
+      $('.msg').html('恭喜您<br />您已注册成功').show('fast', function() {
+        setTimeout(function() {
+          $('.msg').hide('fast');
+        },1000)
+      });;
+    });
+  })(jQuery)
+  
+</script>
+</html>
