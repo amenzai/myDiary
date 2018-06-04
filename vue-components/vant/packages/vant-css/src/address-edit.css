@@ -1,0 +1,34 @@
+@import './common/var.css';
+
+.van-address-edit {
+  &__buttons {
+    padding: 20px 10px;
+
+    .van-button {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__area {
+    .van-cell__title {
+      max-width: 90px;
+    }
+
+    .van-cell__value {
+      text-align: left;
+
+      span {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .van-icon-clear {
+    color: $gray-dark;
+  }
+
+  &-detail__finish {
+    color: $blue;
+    font-size: 12px;
+  }
+}

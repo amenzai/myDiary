@@ -1,0 +1,57 @@
+@import './common/var.css';
+
+.van-submit-bar {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  user-select: none;
+
+  &__tip {
+    color: $orange;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 10px 10px;
+    background-color: #fff7cc;
+  }
+
+  &__bar {
+    height: 50px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    background-color: $white;
+  }
+
+  &__price {
+    flex: 1;
+    text-align: right;
+    color: $gray-darker;
+    padding-right: 12px;
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__price-integer {
+    color: $red;
+  }
+
+  &__price-decimal {
+    color: $red;
+    font-size: 12px;
+  }
+
+  .van-button {
+    width: 110px;
+    height: 100%;
+    border-radius: 0;
+    font-size: 16px;
+
+    &--disabled {
+      border: none;
+    }
+  }
+}

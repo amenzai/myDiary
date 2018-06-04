@@ -1,0 +1,57 @@
+@import './common/var.css';
+
+.van-search {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 6px 15px;
+  position: relative;
+
+  &--show-action {
+    padding-right: 0;
+  }
+
+  .van-cell {
+    flex: 1;
+    border-radius: 4px;
+    padding: 3px 10px 3px 35px;
+  }
+
+  input {
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
+  }
+
+  &__action {
+    line-height: 34px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  &__cancel {
+    padding: 0 10px;
+    color: $green;
+
+    &:active {
+      background-color: $active-color;
+    }
+  }
+
+  .van-icon-search {
+    top: 50%;
+    left: 25px;
+    z-index: 1;
+    color: $gray-dark;
+    position: absolute;
+    font-size: 16px;
+    transform: translateY(-50%);
+  }
+
+  .van-icon-clear {
+    color: #BBB;
+  }
+}
