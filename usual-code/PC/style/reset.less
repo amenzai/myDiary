@@ -124,14 +124,19 @@ textarea {
   resize: none;
 }
 
-label,
-summary {
-  cursor: default;
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
 }
 
-a,
-button {
-  cursor: pointer;
+label,
+summary,
+button[disabled],
+input[disabled] {
+  cursor: default;
 }
 
 strong,
@@ -175,7 +180,6 @@ a:hover {
 }
 
 // add
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -192,12 +196,15 @@ a:hover {
 ::-webkit-input-placeholder {
   color: #999;
 }
+
 :-moz-placeholder {
   color: #999;
 }
+
 ::-moz-placeholder {
   color: #999;
 }
+
 :-ms-input-placeholder {
   color: #ccc;
 }
