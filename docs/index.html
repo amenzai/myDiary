@@ -1,35 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-  <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta content="black" name="apple-mobile-web-app-status-bar-style">
-  <meta content="telephone=no" name="format-detection">
-  <meta content="email=no" name="format-detection">
-  <meta name="description" content="不超过150个字符" />
-  <meta name="keywords" content="" />
-  <meta content="caibaojian" name="author" />
-  <title>前端开发博客</title>
-  <link rel="stylesheet" href="base.css">
-  <script type="text/javascript">
-  //引入该flexible.min.js
-  ! function(e, t) {
-    function n() { var n = l.getBoundingClientRect().width;
-      t = t || 540, n > t && (n = t); var i = 100 * n / e;
-      r.innerHTML = "html{font-size:" + i + "px;}" } var i, d = document,
-      o = window,
-      l = d.documentElement,
-      r = document.createElement("style"); if (l.firstElementChild) l.firstElementChild.appendChild(r);
-    else { var a = d.createElement("div");
-      a.appendChild(r), d.write(a.innerHTML), a = null } n(), o.addEventListener("resize", function() { clearTimeout(i), i = setTimeout(n, 300) }, !1), o.addEventListener("pageshow", function(e) { e.persisted && (clearTimeout(i), i = setTimeout(n, 300)) }, !1), "complete" === d.readyState ? d.body.style.fontSize = "16px" : d.addEventListener("DOMContentLoaded", function(e) { d.body.style.fontSize = "16px" }, !1) }(750, 750);
-  </script>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 
 <body>
-  <!-- 正文 -->
-  <p>移动模板</p>
+  <!-- <nav>
+    <a href="#/">EN</a>
+    <a href="#/zh-cn/">中文</a>
+  </nav> -->
+  <div id="app">加载中......</div>
+  <script>
+    window.$docsify = {
+      name: 'docsify123',
+      repo: 'docsifyjs/docsifyamenzai',
+      loadSidebar: true,
+      // alias: {
+      //   '/.*/_sidebar.md': '/_sidebar.md'
+      // },
+      subMaxLevel: 2,
+      loadNavbar: true,
+      coverpage: true,
+      coverpage: ['/', '/zh-cn/'],
+      // maxLevel: 3,
+      auto2top: true,
+      // logo: '/icon.svg',
+      nameLink: {
+        '/zh-cn/': 'amenzai.me',
+        '/': 'amenzai.com'
+      },
+      themeColor: '#3F51B5',
+      // loadSidebar: true,
+      // autoHeader: true, auto add title
+      mergeNavbar: true, // mobile handle
+      // formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      // formatUpdated: function (time) {
+      //   // ...
+
+      //   return time;
+      // },
+      // routerMode: 'history',
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        // paths: ['/', '/zh-cn/'], // or 'auto'
+        placeholder: 'Type to search',
+
+        // 支持本地化
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': 'Type to search'
+        },
+
+        noData: 'No Results!',
+
+        // 支持本地化
+        noData: {
+          '/zh-cn/': '找不到结果',
+          '/': 'No Results'
+        },
+
+        // 搜索标题的最大程级, 1 - 6
+        depth: 2
+      }
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
 </body>
 
 </html>
